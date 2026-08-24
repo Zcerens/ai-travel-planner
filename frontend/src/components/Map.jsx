@@ -110,9 +110,14 @@ export default function Map({ dayPlan, onPlaceClick }) {
   }, [dayPlan, onPlaceClick])
 
   return (
-    <div className="map-container">
-      <h3>🗺️ Rota Haritası</h3>
-      <div ref={mapContainer} className="map" style={{ height: '400px', borderRadius: '12px', marginBottom: '20px' }} />
+    <div className="map-container" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+      <h3 style={{ margin: '0 0 12px 0' }}>🗺️ Rota Haritası</h3>
+      <div ref={mapContainer} className="map" style={{
+        flex: 1,
+        minHeight: '500px',
+        borderRadius: '12px',
+        marginBottom: '0'
+      }} />
     </div>
   )
 }

@@ -482,10 +482,12 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
-  /* Map + Itinerary Grid - Responsive */
+@media (max-width: 1200px) {
+  /* Harita ve timeline'ı stack et */
   .trip-plan > div:nth-child(4) {
     grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    margin-bottom: 12px !important;
   }
 }
 
