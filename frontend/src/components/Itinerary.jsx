@@ -1,4 +1,4 @@
-export default function Itinerary({ itinerary }) {
+export default function Itinerary({ itinerary, onPlaceClick }) {
   const getIcon = (type) => {
     const icons = {
       departure: '🚗',
@@ -39,7 +39,12 @@ export default function Itinerary({ itinerary }) {
       <h3>📋 Günlük Programa</h3>
       <div className="timeline">
         {itinerary.map((stop, index) => (
-          <div key={index} className="timeline-item">
+          <div
+            key={index}
+            className="timeline-item"
+            onClick={() => onPlaceClick?.(stop)}
+            style={{ cursor: 'pointer' }}
+          >
             <div className="timeline-dot">
               <span className="timeline-icon">{getIcon(stop.type)}</span>
             </div>

@@ -437,7 +437,7 @@ body {
 
 /* Map Container */
 .map-container {
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 .map-container h3 {
@@ -450,6 +450,22 @@ body {
   border: 1px solid var(--border);
   border-radius: 8px;
   min-height: 400px;
+  width: 100%;
+}
+
+/* Leaflet Overrides */
+.leaflet-container {
+  background-color: var(--bg) !important;
+  border-radius: 8px;
+}
+
+.leaflet-tile-pane {
+  border-radius: 8px;
+}
+
+/* Custom Marker Styles */
+.custom-marker {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 /* Footer */
@@ -466,6 +482,13 @@ body {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  /* Map + Itinerary Grid - Responsive */
+  .trip-plan > div:nth-child(4) {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 @media (max-width: 768px) {
   .header h1 {
     font-size: 1.8rem;
@@ -494,5 +517,10 @@ body {
 
   .trip-form {
     padding: 20px;
+  }
+
+  /* Map + Itinerary Stack on Mobile */
+  .trip-plan > div:nth-child(4) {
+    grid-template-columns: 1fr !important;
   }
 }
