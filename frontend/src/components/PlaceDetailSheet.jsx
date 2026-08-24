@@ -102,7 +102,7 @@ export default function PlaceDetailSheet({ place, isOpen, onClose, onEdit }) {
           <div style={{ backgroundColor: '#0f3460', padding: '12px', borderRadius: '8px' }}>
             <p style={{ margin: '0 0 4px 0', color: '#999', fontSize: '12px' }}>🕐 Saat</p>
             <p style={{ margin: 0, color: '#fff', fontWeight: 'bold', fontSize: '14px' }}>
-              {place.time ? place.time.slice(11, 16) : 'N/A'}
+              {place.time ? place.time.replace('T', ' ').slice(11, 16) : 'N/A'}
             </p>
           </div>
           <div style={{ backgroundColor: '#0f3460', padding: '12px', borderRadius: '8px' }}>

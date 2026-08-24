@@ -69,7 +69,27 @@ export default function Map({ dayPlan, onPlaceClick }) {
       .bindPopup(`<b>${dayPlan.to}</b><br>Varış`)
       .addTo(map.current)
 
-    // Aktivite marker'ları (itinerary'deki yerler)
+    // Rota çizgisi - başlangıçtan bitiş noktasına tüm aktiviteleri geçerek
+    const routePoints = [fromCoords]
+    dayPlan.itinerary.forEach((item) => {
+      if (item.type !== 'departure' && item.type !== 'arrival' && item.lat && item.lng) {
+        routePoints.push([item.lat, item.lng])
+      }
+    })
+    routePoints.push(toCoords)
+
+    // Polyline çiz (mavi çizgi)
+    if (routePoints.length > 1) {
+      L.polyline(routePoints, {
+        color: '#667eea',
+        weight: 3,
+        opacity: 0.7,
+        dashArray: '5, 5',
+      }).addTo(map.current)
+    }
+
+    // Aktivite marker'ları (itinerary'deki yerler) - sıra numarası ile
+    let activityIndex = 1
     dayPlan.itinerary.forEach((item, index) => {
       if (item.type !== 'departure' && item.type !== 'arrival') {
         // Gerçek koordinatları kullan, fallback olarak şehrin koordinatını kullan
@@ -89,18 +109,23 @@ export default function Map({ dayPlan, onPlaceClick }) {
 
         const marker = L.marker(coords, {
           icon: L.divIcon({
-            html: `<div style="background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid white; font-size: 14px; cursor: pointer;">${iconHTML}</div>`,
-            iconSize: [28, 28],
+            html: `<div style="background: #667eea; color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid white; font-size: 18px; cursor: pointer; position: relative;">
+              <div style="font-size: 14px; position: absolute; top: -8px; right: -8px; background: #10b981; color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px;">${activityIndex}</div>
+              ${iconHTML}
+            </div>`,
+            iconSize: [36, 36],
             className: 'custom-marker',
           }),
         })
-          .bindPopup(`<b>${item.title}</b><br>${item.time}<br>${item.duration} min`)
+          .bindPopup(`<b>#${activityIndex}. ${item.title}</b><br>${item.time}<br>${item.duration} min`)
           .addTo(map.current)
 
         marker.on('click', () => {
           setSelectedPlace(item)
           onPlaceClick?.(item)
         })
+
+        activityIndex++
       }
     })
 
@@ -114,7 +139,7 @@ export default function Map({ dayPlan, onPlaceClick }) {
       <h3 style={{ margin: '0 0 12px 0' }}>🗺️ Rota Haritası</h3>
       <div ref={mapContainer} className="map" style={{
         flex: 1,
-        minHeight: '500px',
+        height: '100%',
         borderRadius: '12px',
         marginBottom: '0'
       }} />

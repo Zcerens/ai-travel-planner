@@ -14,8 +14,17 @@ const INTERESTS = [
 ]
 
 export default function TripForm({ onSubmit, loading }) {
+  // Bugünün tarihini al ve formatla (YYYY-MM-DDTHH:mm)
+  const getTodayDateTime = () => {
+    const today = new Date()
+    const year = today.getFullYear()
+    const month = String(today.getMonth() + 1).padStart(2, '0')
+    const day = String(today.getDate()).padStart(2, '0')
+    return `${year}-${month}-${day}T08:00`
+  }
+
   const [startCity, setStartCity] = useState('Ankara')
-  const [departureTime, setDepartureTime] = useState('2024-12-20T08:00')
+  const [departureTime, setDepartureTime] = useState(getTodayDateTime())
   const [destinations, setDestinations] = useState(['Denizli', 'Antalya'])
   const [selectedInterests, setSelectedInterests] = useState(['history', 'nature'])
 

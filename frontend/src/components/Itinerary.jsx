@@ -50,7 +50,7 @@ export default function Itinerary({ itinerary, onPlaceClick }) {
             </div>
             <div className="timeline-content">
               <div className="timeline-header">
-                <span className="timeline-time">{stop.time}</span>
+                <span className="timeline-time">{stop.time?.replace('T', ' ')}</span>
                 <span className="timeline-type">{getTypeLabel(stop.type)}</span>
               </div>
               <h4>{stop.title}</h4>

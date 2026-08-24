@@ -71,21 +71,20 @@ export default function TripPlan({ plan }) {
         </div>
       </div>
 
-      {/* Main Content - Map & Itinerary */}
+      {/* Main Content - Map Top, Itinerary Bottom */}
       <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)',
+        display: 'flex',
+        flexDirection: 'column',
         gap: '24px',
-        marginBottom: '24px',
-        minHeight: '600px'
+        marginBottom: '24px'
       }}>
-        {/* Left: Map */}
-        <div style={{ minWidth: 0, display: 'flex', flexDirection: 'column' }}>
+        {/* Top: Map - Full Width */}
+        <div style={{ width: '100%', height: '500px' }}>
           <Map dayPlan={dayPlan} onPlaceClick={handlePlaceClick} />
         </div>
 
-        {/* Right: Itinerary */}
-        <div style={{ minWidth: 0, display: 'flex', flexDirection: 'column', overflowY: 'auto' }}>
+        {/* Bottom: Itinerary - Full Width */}
+        <div style={{ width: '100%' }}>
           <Itinerary itinerary={dayPlan.itinerary} onPlaceClick={handlePlaceClick} />
         </div>
       </div>
