@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jre as builder
+FROM eclipse-temurin:21-jdk as builder
 WORKDIR /build
 COPY src ./src
 COPY data ./data
