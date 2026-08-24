@@ -78,9 +78,20 @@ public class TravelPlanner {
         // Mola noktaları ve yerler
         List<Map<String, Object>> attractions = selectAttractions(to, from, interests);
 
+        // İlk aktiviteye seyahat süresi ekle (başlangıç şehrinden hedefe)
+        String lastActivityCity = from;
+        if (!attractions.isEmpty()) {
+            String firstActivityCity = (String) attractions.get(0).get("city");
+            double travelDistToFirst = calculateDistance(from, firstActivityCity);
+            long travelMinsToFirst = (long) Math.ceil(travelDistToFirst / 100.0 * 60);
+            currentTime = currentTime.plusMinutes(travelMinsToFirst);
+        }
+
         // Günlük aktiviteler
-        for (Map<String, Object> attraction : attractions) {
+        for (int i = 0; i < attractions.size(); i++) {
+            Map<String, Object> attraction = attractions.get(i);
             String type = (String) attraction.get("type");
+            String activityCity = (String) attraction.get("city");
             int estimatedDuration = ((Number) attraction.get("estimated_visit_duration")).intValue();
 
             // Öğle yemeği (12:00-13:30)
@@ -93,7 +104,7 @@ public class TravelPlanner {
             activity.put("time", currentTime.toString());
             activity.put("type", type);
             activity.put("title", (String) attraction.get("name"));
-            activity.put("location", (String) attraction.get("city"));
+            activity.put("location", activityCity);
             activity.put("duration", estimatedDuration);
             activity.put("price", attraction.get("entrance_fee"));
             activity.put("rating", attraction.get("google_rating"));
@@ -104,10 +115,19 @@ public class TravelPlanner {
             itinerary.add(activity);
 
             currentTime = currentTime.plusMinutes(estimatedDuration);
+            lastActivityCity = activityCity;
 
             // Kahve molası
             if (Math.random() > 0.6 && currentTime.getHour() >= 15 && currentTime.getHour() < 17) {
                 currentTime = addStop(itinerary, currentTime, "coffee", to, 20);
+            }
+
+            // Sonraki aktiviteye seyahat süresi ekle
+            if (i < attractions.size() - 1) {
+                String nextActivityCity = (String) attractions.get(i + 1).get("city");
+                double travelDistToNext = calculateDistance(activityCity, nextActivityCity);
+                long travelMinsToNext = (long) Math.ceil(travelDistToNext / 100.0 * 60);
+                currentTime = currentTime.plusMinutes(travelMinsToNext);
             }
         }
 
@@ -116,8 +136,8 @@ public class TravelPlanner {
             currentTime = addStop(itinerary, currentTime, "dinner", to, 75);
         }
 
-        // Varış - mesafeye göre süresi hesapla (ortalama 100km/saat)
-        double distance = calculateDistance(from, to);
+        // Varış - son aktivite/şehrinden hedefe seyahat süresi
+        double distance = calculateDistance(lastActivityCity, to);
         long travelMinutes = (long) Math.ceil(distance / 100.0 * 60); // 100km/saat = 1 dakika/km
         currentTime = currentTime.plusMinutes(travelMinutes);
 
