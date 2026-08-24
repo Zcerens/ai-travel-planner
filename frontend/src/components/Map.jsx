@@ -72,7 +72,8 @@ export default function Map({ dayPlan, onPlaceClick }) {
     // Aktivite marker'ları (itinerary'deki yerler)
     dayPlan.itinerary.forEach((item, index) => {
       if (item.type !== 'departure' && item.type !== 'arrival') {
-        const coords = cityCoords[item.location.toLowerCase()] || fromCoords
+        // Gerçek koordinatları kullan, fallback olarak şehrin koordinatını kullan
+        const coords = (item.lat && item.lng) ? [item.lat, item.lng] : (cityCoords[item.location.toLowerCase()] || fromCoords)
 
         const iconHTML = {
           'breakfast': '🥐',
