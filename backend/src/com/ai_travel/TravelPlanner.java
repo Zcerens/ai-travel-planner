@@ -116,8 +116,11 @@ public class TravelPlanner {
             currentTime = addStop(itinerary, currentTime, "dinner", to, 75);
         }
 
-        // Varış
-        currentTime = currentTime.plusHours(2); // Seyahat süresi tahmini
+        // Varış - mesafeye göre süresi hesapla (ortalama 100km/saat)
+        double distance = calculateDistance(from, to);
+        long travelMinutes = (long) Math.ceil(distance / 100.0 * 60); // 100km/saat = 1 dakika/km
+        currentTime = currentTime.plusMinutes(travelMinutes);
+
         Map<String, Object> endStop = new LinkedHashMap<>();
         endStop.put("time", currentTime.toString());
         endStop.put("type", "arrival");
@@ -128,8 +131,8 @@ public class TravelPlanner {
 
         dayPlan.put("itinerary", itinerary);
         dayPlan.put("estimatedArrivalTime", currentTime.atZone(java.time.ZoneId.systemDefault()).toInstant().toEpochMilli());
-        dayPlan.put("totalDistance", calculateDistance(from, to) + " km");
-        dayPlan.put("estimatedDrivingTime", "2 hours"); // TODO: OSRM ile hesapla
+        dayPlan.put("totalDistance", (long)distance + " km");
+        dayPlan.put("estimatedDrivingTime", (travelMinutes / 60) + " saat " + (travelMinutes % 60) + " dakika");
 
         return dayPlan;
     }

@@ -454,9 +454,16 @@ body {
 }
 
 /* Leaflet Overrides */
+.map-container {
+  position: relative;
+  z-index: 1;
+}
+
 .leaflet-container {
   background-color: var(--bg) !important;
   border-radius: 8px;
+  position: relative;
+  z-index: 5;
 }
 
 .leaflet-tile-pane {
