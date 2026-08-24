@@ -1,0 +1,724 @@
+{
+  "places": [
+    {
+      "id": "ankara-citadel",
+      "name": "Ankara Kalesi",
+      "type": "historical",
+      "category": "castle",
+      "lat": 39.9424,
+      "lng": 32.8663,
+      "city": "Ankara",
+      "description": "13. yüzyıldan kalan Ankara'nın sembol yapısı",
+      "entrance_fee": 100,
+      "student_fee": 50,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "09:00-17:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "09:00-17:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "09:00-17:00"
+      },
+      "estimated_visit_duration": 60,
+      "google_rating": 4.5,
+      "review_count": 2100,
+      "highlights": [
+        "Şehir panoraması",
+        "Tarihi yapı",
+        "Müze"
+      ]
+    },
+    {
+      "id": "ankara-museum",
+      "name": "Anadolu Medeniyetleri Müzesi",
+      "type": "museum",
+      "category": "museum",
+      "lat": 39.9463,
+      "lng": 32.8724,
+      "city": "Ankara",
+      "description": "Dünya ünlü Hitit eserleri ve antik çağ artefaktlarını sergileyen müze",
+      "entrance_fee": 250,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "09:00-17:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "09:00-17:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "09:00-17:00"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.8,
+      "review_count": 5200,
+      "highlights": [
+        "Hitit eserleri",
+        "Boğazköy kazıları",
+        "Antik para koleksiyonu"
+      ]
+    },
+    {
+      "id": "konya-mevlana",
+      "name": "Mevlana Müzesi",
+      "type": "historical",
+      "category": "museum",
+      "lat": 37.6614,
+      "lng": 32.4808,
+      "city": "Konya",
+      "description": "Mevlana Celaleddin Rumi'nin türbesi ve müzesi. UNESCO Dünya Mirası",
+      "entrance_fee": 250,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "10:00-18:00",
+        "tuesday": "10:00-18:00",
+        "wednesday": "10:00-18:00",
+        "thursday": "10:00-18:00",
+        "friday": "10:00-18:00",
+        "saturday": "10:00-18:00",
+        "sunday": "10:00-18:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.7,
+      "review_count": 8900,
+      "highlights": [
+        "Mevlana türbesi",
+        "Sufi tarikatı eserleri",
+        "İslam mimarisi"
+      ]
+    },
+    {
+      "id": "konya-karatay-medrese",
+      "name": "Karatay Medresi",
+      "type": "historical",
+      "category": "building",
+      "lat": 37.6665,
+      "lng": 32.4830,
+      "city": "Konya",
+      "description": "13. yüzyıl Selçuk mimarisinin harika örneği",
+      "entrance_fee": 150,
+      "student_fee": 75,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "09:00-17:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "09:00-17:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "09:00-17:00"
+      },
+      "estimated_visit_duration": 45,
+      "google_rating": 4.6,
+      "review_count": 2300,
+      "highlights": [
+        "Seramik dekorasyonları",
+        "İçgüdü mimarisindeki tasarım",
+        "Selçuk dönemi"
+      ]
+    },
+    {
+      "id": "cappadocia-goreme",
+      "name": "Göreme Açık Hava Müzesi",
+      "type": "historical",
+      "category": "museum",
+      "lat": 38.7435,
+      "lng": 34.8313,
+      "city": "Nevşehir",
+      "description": "Peri bacaları ve kaya kiliselerinin olduğu UNESCO Dünya Mirası",
+      "entrance_fee": 300,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-18:00",
+        "tuesday": "08:00-18:00",
+        "wednesday": "08:00-18:00",
+        "thursday": "08:00-18:00",
+        "friday": "08:00-18:00",
+        "saturday": "08:00-18:00",
+        "sunday": "08:00-18:00"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.8,
+      "review_count": 12500,
+      "highlights": [
+        "Kaya kilisleri",
+        "Peri bacaları",
+        "Bizans freskolleri"
+      ]
+    },
+    {
+      "id": "cappadocia-uchisar",
+      "name": "Üçhisar Kalesi",
+      "type": "historical",
+      "category": "castle",
+      "lat": 38.7482,
+      "lng": 34.8287,
+      "city": "Nevşehir",
+      "description": "Kapadokya'nın en yüksek noktasından şehir panoraması",
+      "entrance_fee": 100,
+      "student_fee": 50,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "08:00-18:00",
+        "tuesday": "08:00-18:00",
+        "wednesday": "08:00-18:00",
+        "thursday": "08:00-18:00",
+        "friday": "08:00-18:00",
+        "saturday": "08:00-18:00",
+        "sunday": "08:00-18:00"
+      },
+      "estimated_visit_duration": 45,
+      "google_rating": 4.6,
+      "review_count": 4100,
+      "highlights": [
+        "Panoramik manzara",
+        "Kapadokya dioraması",
+        "Fotoğraf fırsatı"
+      ]
+    },
+    {
+      "id": "aksaray-sarihana",
+      "name": "Sarı Hana Medresi",
+      "type": "historical",
+      "category": "building",
+      "lat": 38.3654,
+      "lng": 34.3028,
+      "city": "Aksaray",
+      "description": "12. yüzyıl Selçuk döneminden medresi",
+      "entrance_fee": 75,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "09:00-17:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "09:00-17:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "09:00-17:00"
+      },
+      "estimated_visit_duration": 30,
+      "google_rating": 4.3,
+      "review_count": 650,
+      "highlights": [
+        "Selçuk mimarisi",
+        "Taş işçiliği",
+        "Türbesi"
+      ]
+    },
+    {
+      "id": "isparta-lake",
+      "name": "Eğirdir Gölü",
+      "type": "nature",
+      "category": "lake",
+      "lat": 37.7697,
+      "lng": 31.9061,
+      "city": "Isparta",
+      "description": "Türkiye'nin en güzel göllerinden biri, manzara noktası",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 45,
+      "google_rating": 4.6,
+      "review_count": 3200,
+      "highlights": [
+        "Doğal güzellik",
+        "Balık ekmeği (çorbası)",
+        "Manzara noktası"
+      ]
+    },
+    {
+      "id": "denizli-pamukkale",
+      "name": "Pamukkale Travertenleri",
+      "type": "nature",
+      "category": "natural_site",
+      "lat": 37.9200,
+      "lng": 29.1208,
+      "city": "Denizli",
+      "description": "UNESCO Dünya Mirası - Beyaz travertenleri ve termal sular",
+      "entrance_fee": 400,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-19:00",
+        "tuesday": "08:00-19:00",
+        "wednesday": "08:00-19:00",
+        "thursday": "08:00-19:00",
+        "friday": "08:00-19:00",
+        "saturday": "08:00-19:00",
+        "sunday": "08:00-19:00"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.7,
+      "review_count": 15800,
+      "highlights": [
+        "Beyaz travertenleri",
+        "Termal havuzlar",
+        "Hierapolis antik kenti"
+      ]
+    },
+    {
+      "id": "denizli-hierapolis",
+      "name": "Hierapolis Antik Kenti",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 37.9280,
+      "lng": 29.1289,
+      "city": "Denizli",
+      "description": "Pamukkale'nin üstündeki antik kentin kalıntıları",
+      "entrance_fee": 400,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-19:00",
+        "tuesday": "08:00-19:00",
+        "wednesday": "08:00-19:00",
+        "thursday": "08:00-19:00",
+        "friday": "08:00-19:00",
+        "saturday": "08:00-19:00",
+        "sunday": "08:00-19:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.6,
+      "review_count": 8900,
+      "highlights": [
+        "Tiyatro",
+        "Nekropol",
+        "Apollon Tapınağı"
+      ]
+    },
+    {
+      "id": "burdur-sagalassos",
+      "name": "Sagalassos Antik Kenti",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 37.6444,
+      "lng": 30.6306,
+      "city": "Burdur",
+      "description": "Yüksek dağlarda UNESCO Dünya Mirası antik kenti",
+      "entrance_fee": 200,
+      "student_fee": 100,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-17:00",
+        "tuesday": "08:00-17:00",
+        "wednesday": "08:00-17:00",
+        "thursday": "08:00-17:00",
+        "friday": "08:00-17:00",
+        "saturday": "08:00-17:00",
+        "sunday": "08:00-17:00"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.7,
+      "review_count": 2100,
+      "highlights": [
+        "Yüksek şehir",
+        "Pisidia bölgesi",
+        "Doğal manzara"
+      ]
+    },
+    {
+      "id": "mugla-dalyan",
+      "name": "Dalyan - Kaunos Antik Kenti",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 37.2683,
+      "lng": 28.5711,
+      "city": "Muğla",
+      "description": "Kaya mezarları ve antik liman kenti",
+      "entrance_fee": 150,
+      "student_fee": 75,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-17:00",
+        "tuesday": "08:00-17:00",
+        "wednesday": "08:00-17:00",
+        "thursday": "08:00-17:00",
+        "friday": "08:00-17:00",
+        "saturday": "08:00-17:00",
+        "sunday": "08:00-17:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.5,
+      "review_count": 3400,
+      "highlights": [
+        "Kaya mezarları",
+        "Nehir kanalı",
+        "Kaplumbağa plajı"
+      ]
+    },
+    {
+      "id": "mugla-ekincik",
+      "name": "Ekincik - Heraclea Antik Kenti",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 37.3183,
+      "lng": 28.5128,
+      "city": "Muğla",
+      "description": "Küçük antik liman kenti",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 45,
+      "google_rating": 4.2,
+      "review_count": 800,
+      "highlights": [
+        "Doğa",
+        "Arkeoloji",
+        "Sakin ortam"
+      ]
+    },
+    {
+      "id": "demre-myra",
+      "name": "Myra Antik Kenti - Noel Baba Kilisesi",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 36.2683,
+      "lng": 29.6456,
+      "city": "Antalya",
+      "description": "UNESCO Dünya Mirası - Kaya mezarları ve Noel Baba'nın kilisesi",
+      "entrance_fee": 300,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-19:00",
+        "tuesday": "08:00-19:00",
+        "wednesday": "08:00-19:00",
+        "thursday": "08:00-19:00",
+        "friday": "08:00-19:00",
+        "saturday": "08:00-19:00",
+        "sunday": "08:00-19:00"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.6,
+      "review_count": 7800,
+      "highlights": [
+        "Noel Baba Kilisesi",
+        "Kaya mezarları",
+        "Antik tiyatro"
+      ]
+    },
+    {
+      "id": "demre-andriace",
+      "name": "Andriace Antik Limanı",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 36.2711,
+      "lng": 29.6522,
+      "city": "Antalya",
+      "description": "Roma dönemi limanının kalıntıları",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 45,
+      "google_rating": 4.2,
+      "review_count": 900,
+      "highlights": [
+        "Roma limanı",
+        "Arkeoloji",
+        "Deniz manzarası"
+      ]
+    },
+    {
+      "id": "kas-kekova",
+      "name": "Kekova Sualtı Kenti",
+      "type": "nature",
+      "category": "archaeological_site",
+      "lat": 36.1889,
+      "lng": 29.6144,
+      "city": "Antalya",
+      "description": "Sualtında kalan antik kentin kalıntıları - tekneler gezinti",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.7,
+      "review_count": 5600,
+      "highlights": [
+        "Sualtı kalıntıları",
+        "Tekne turu",
+        "Mavi su"
+      ]
+    },
+    {
+      "id": "kas-lycian-tombs",
+      "name": "Kaş Likya Mezarları",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 36.2019,
+      "lng": 29.6342,
+      "city": "Antalya",
+      "description": "Kaş şehrinin üstündeki Likya dönemi mezarları",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 60,
+      "google_rating": 4.5,
+      "review_count": 2100,
+      "highlights": [
+        "Likya mimarisi",
+        "Manzara noktası",
+        "Tarihi eser"
+      ]
+    },
+    {
+      "id": "kayakoy-ghost-village",
+      "name": "Kayaköy Terk Edilmiş Kasabası",
+      "type": "historical",
+      "category": "village",
+      "lat": 36.5419,
+      "lng": 29.2408,
+      "city": "Muğla",
+      "description": "1920 tarihli Yunan göçü sonrası terk edilmiş köy",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.5,
+      "review_count": 6200,
+      "highlights": [
+        "Terk edilmiş kiliseler",
+        "Tarihsel atmosfer",
+        "Fotoğraf fırsatları"
+      ]
+    },
+    {
+      "id": "fethiye-tlos",
+      "name": "Tlos Antik Kenti",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 36.5147,
+      "lng": 29.2083,
+      "city": "Muğla",
+      "description": "Likya bölgesinin en önemli mimarisi ve kale",
+      "entrance_fee": 200,
+      "student_fee": 100,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-17:00",
+        "tuesday": "08:00-17:00",
+        "wednesday": "08:00-17:00",
+        "thursday": "08:00-17:00",
+        "friday": "08:00-17:00",
+        "saturday": "08:00-17:00",
+        "sunday": "08:00-17:00"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.7,
+      "review_count": 3800,
+      "highlights": [
+        "Likya mimarisi",
+        "Kale",
+        "Panoramik manzara"
+      ]
+    },
+    {
+      "id": "fethiye-xanthos",
+      "name": "Xanthos Antik Kenti",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 36.3619,
+      "lng": 29.3233,
+      "city": "Muğla",
+      "description": "UNESCO Dünya Mirası - Likya medeniyetinin başkenti",
+      "entrance_fee": 200,
+      "student_fee": 100,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-17:00",
+        "tuesday": "08:00-17:00",
+        "wednesday": "08:00-17:00",
+        "thursday": "08:00-17:00",
+        "friday": "08:00-17:00",
+        "saturday": "08:00-17:00",
+        "sunday": "08:00-17:00"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.6,
+      "review_count": 2900,
+      "highlights": [
+        "Likya başkenti",
+        "Nekropol",
+        "Antik şehir"
+      ]
+    },
+    {
+      "id": "fethiye-letoon",
+      "name": "Letoon Antik Kenti",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 36.3744,
+      "lng": 29.3011,
+      "city": "Muğla",
+      "description": "Xanthos yanında kutsal tapınak şehri",
+      "entrance_fee": 200,
+      "student_fee": 100,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-17:00",
+        "tuesday": "08:00-17:00",
+        "wednesday": "08:00-17:00",
+        "thursday": "08:00-17:00",
+        "friday": "08:00-17:00",
+        "saturday": "08:00-17:00",
+        "sunday": "08:00-17:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.5,
+      "review_count": 1800,
+      "highlights": [
+        "Likya sacredness",
+        "Tapınaklar",
+        "Doğal güzellik"
+      ]
+    },
+    {
+      "id": "fethiye-blue-lagoon",
+      "name": "Ölüdeniz - Mavi Lagün",
+      "type": "nature",
+      "category": "beach",
+      "lat": 36.5539,
+      "lng": 29.1128,
+      "city": "Muğla",
+      "description": "Türkiye'nin en güzel plajlarından biri",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.8,
+      "review_count": 18900,
+      "highlights": [
+        "Lagün manzarası",
+        "Kristal berrak su",
+        "Paragliding"
+      ]
+    },
+    {
+      "id": "fethiye-butterfly-valley",
+      "name": "Kelebekler Vadisi",
+      "type": "nature",
+      "category": "natural_site",
+      "lat": 36.4733,
+      "lng": 29.1250,
+      "city": "Muğla",
+      "description": "Nadir kelebekler ve dik kayalıklarla çevrili vadi",
+      "entrance_fee": 75,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "08:00-17:00",
+        "tuesday": "08:00-17:00",
+        "wednesday": "08:00-17:00",
+        "thursday": "08:00-17:00",
+        "friday": "08:00-17:00",
+        "saturday": "08:00-17:00",
+        "sunday": "08:00-17:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.6,
+      "review_count": 4300,
+      "highlights": [
+        "Nadir kelebekler",
+        "Dik kayalıklar",
+        "Doğal güzellik"
+      ]
+    },
+    {
+      "id": "fethiye-dinc-river",
+      "name": "Esen Irmağı Kanyonu",
+      "type": "nature",
+      "category": "canyon",
+      "lat": 36.3958,
+      "lng": 29.3183,
+      "city": "Muğla",
+      "description": "Rafting ve doğa yürüyüşü için ideal",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.7,
+      "review_count": 2600,
+      "highlights": [
+        "Rafting",
+        "Doğa yürüyüşü",
+        "Manzara"
+      ]
+    }
+  ]
+}

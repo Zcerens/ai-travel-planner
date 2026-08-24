@@ -1,0 +1,367 @@
+{
+  "restaurants": [
+    {
+      "id": "ankara-breakfast-1",
+      "name": "Ankara Serpme Kahvaltısı Sarayı",
+      "type": "breakfast",
+      "city": "Ankara",
+      "lat": 39.9524,
+      "lng": 32.8567,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 1,
+      "google_rating": 4.6,
+      "review_count": 2100,
+      "opening_hours": "07:00-11:00",
+      "average_duration": 45,
+      "highlights": [
+        "Serpme kahvaltı",
+        "Hızlı servis",
+        "Taze ürünler"
+      ]
+    },
+    {
+      "id": "ankara-lunch-1",
+      "name": "Dürüm Ustası Ankara",
+      "type": "lunch",
+      "city": "Ankara",
+      "lat": 39.9456,
+      "lng": 32.8634,
+      "cuisine": "Turkish",
+      "price_level": 1,
+      "google_rating": 4.5,
+      "review_count": 1800,
+      "opening_hours": "11:00-15:00",
+      "average_duration": 30,
+      "highlights": [
+        "Dürüm",
+        "Kebap",
+        "Uygun fiyat"
+      ]
+    },
+    {
+      "id": "konya-pide-1",
+      "name": "Konya Pide Salonu",
+      "type": "lunch",
+      "city": "Konya",
+      "lat": 37.6714,
+      "lng": 32.4908,
+      "cuisine": "Turkish",
+      "price_level": 1,
+      "google_rating": 4.7,
+      "review_count": 3200,
+      "opening_hours": "11:00-21:00",
+      "average_duration": 45,
+      "highlights": [
+        "Konya pidesi",
+        "Etli ekmek",
+        "Geleneksel lezzet"
+      ]
+    },
+    {
+      "id": "konya-breakfast-1",
+      "name": "Konya Tatlıcısı Kahvaltısı",
+      "type": "breakfast",
+      "city": "Konya",
+      "lat": 37.6664,
+      "lng": 32.4830,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 2,
+      "google_rating": 4.4,
+      "review_count": 1200,
+      "opening_hours": "06:00-10:00",
+      "average_duration": 50,
+      "highlights": [
+        "Tatlı peynir",
+        "Aşırlı kahvaltı",
+        "Dişi peynir"
+      ]
+    },
+    {
+      "id": "goreme-breakfast-1",
+      "name": "Cappadocia Sunrise Cafe",
+      "type": "breakfast",
+      "city": "Nevşehir",
+      "lat": 38.7435,
+      "lng": 34.8313,
+      "cuisine": "International",
+      "price_level": 2,
+      "google_rating": 4.6,
+      "review_count": 4200,
+      "opening_hours": "06:00-10:00",
+      "average_duration": 60,
+      "highlights": [
+        "Manzara",
+        "Balonlar",
+        "Güzel ortam"
+      ]
+    },
+    {
+      "id": "goreme-lunch-1",
+      "name": "Stone House Restaurant",
+      "type": "lunch",
+      "city": "Nevşehir",
+      "lat": 38.7482,
+      "lng": 34.8287,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.7,
+      "review_count": 2800,
+      "opening_hours": "11:30-22:00",
+      "average_duration": 60,
+      "highlights": [
+        "Kaya evde yemek",
+        "Testi kebabı",
+        "Tarihi ortam"
+      ]
+    },
+    {
+      "id": "denizli-breakfast-1",
+      "name": "Pamukkale Panorama Breakfast",
+      "type": "breakfast",
+      "city": "Denizli",
+      "lat": 37.9200,
+      "lng": 29.1208,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 2,
+      "google_rating": 4.5,
+      "review_count": 1900,
+      "opening_hours": "07:00-11:00",
+      "average_duration": 45,
+      "highlights": [
+        "Pamukkale manzarası",
+        "Beslenme",
+        "Konaklama paketleri"
+      ]
+    },
+    {
+      "id": "denizli-lunch-1",
+      "name": "Travertine Restaurant",
+      "type": "lunch",
+      "city": "Denizli",
+      "lat": 37.9250,
+      "lng": 29.1250,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.6,
+      "review_count": 2100,
+      "opening_hours": "12:00-22:00",
+      "average_duration": 60,
+      "highlights": [
+        "Trout",
+        "Yerel yemekler",
+        "Denizli anestezi"
+      ]
+    },
+    {
+      "id": "demre-breakfast-1",
+      "name": "Demre Meşe Kahvaltısı",
+      "type": "breakfast",
+      "city": "Antalya",
+      "lat": 36.2683,
+      "lng": 29.6456,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 1,
+      "google_rating": 4.4,
+      "review_count": 800,
+      "opening_hours": "06:00-10:00",
+      "average_duration": 45,
+      "highlights": [
+        "Peynir",
+        "Zeytin",
+        "Yerel ürünler"
+      ]
+    },
+    {
+      "id": "demre-lunch-1",
+      "name": "Myra Balık Restoran",
+      "type": "lunch",
+      "city": "Antalya",
+      "lat": 36.2700,
+      "lng": 29.6500,
+      "cuisine": "Seafood",
+      "price_level": 3,
+      "google_rating": 4.7,
+      "review_count": 1800,
+      "opening_hours": "12:00-23:00",
+      "average_duration": 75,
+      "highlights": [
+        "Taze balık",
+        "Deniz ürünleri",
+        "Lezzetli"
+      ]
+    },
+    {
+      "id": "demre-dinner-1",
+      "name": "Noel Baba Cafe",
+      "type": "dinner",
+      "city": "Antalya",
+      "lat": 36.2680,
+      "lng": 29.6460,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.5,
+      "review_count": 1200,
+      "opening_hours": "18:00-23:00",
+      "average_duration": 60,
+      "highlights": [
+        "Tarihi ortam",
+        "Noel Baba teması",
+        "Rahat"
+      ]
+    },
+    {
+      "id": "kas-breakfast-1",
+      "name": "Kas Likya Kahvaltısı",
+      "type": "breakfast",
+      "city": "Antalya",
+      "lat": 36.2019,
+      "lng": 29.6342,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 2,
+      "google_rating": 4.6,
+      "review_count": 1500,
+      "opening_hours": "07:00-11:00",
+      "average_duration": 45,
+      "highlights": [
+        "Deniz manzarası",
+        "Ruh halinde",
+        "Taze"
+      ]
+    },
+    {
+      "id": "kas-lunch-1",
+      "name": "Bahçeli Restoran Kaş",
+      "type": "lunch",
+      "city": "Antalya",
+      "lat": 36.2050,
+      "lng": 29.6350,
+      "cuisine": "Mediterranean",
+      "price_level": 2,
+      "google_rating": 4.7,
+      "review_count": 2100,
+      "opening_hours": "12:00-23:00",
+      "average_duration": 75,
+      "highlights": [
+        "Bahçe ortamı",
+        "Akdeniz yemekleri",
+        "Romantik"
+      ]
+    },
+    {
+      "id": "kas-dinner-1",
+      "name": "Sunset Grill Kaş",
+      "type": "dinner",
+      "city": "Antalya",
+      "lat": 36.2030,
+      "lng": 29.6330,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.8,
+      "review_count": 3200,
+      "opening_hours": "17:00-23:00",
+      "average_duration": 90,
+      "highlights": [
+        "Güneş batışı",
+        "Deniz kenarında",
+        "Balık",
+        "Manzara"
+      ]
+    },
+    {
+      "id": "fethiye-breakfast-1",
+      "name": "Blue Lagoon Breakfast",
+      "type": "breakfast",
+      "city": "Muğla",
+      "lat": 36.5539,
+      "lng": 29.1128,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 2,
+      "google_rating": 4.5,
+      "review_count": 2300,
+      "opening_hours": "07:00-11:00",
+      "average_duration": 45,
+      "highlights": [
+        "Lagün manzarası",
+        "Taze",
+        "Rahat ortam"
+      ]
+    },
+    {
+      "id": "fethiye-lunch-1",
+      "name": "Ölüdeniz Fish House",
+      "type": "lunch",
+      "city": "Muğla",
+      "lat": 36.5500,
+      "lng": 29.1100,
+      "cuisine": "Seafood",
+      "price_level": 2,
+      "google_rating": 4.7,
+      "review_count": 2800,
+      "opening_hours": "12:00-23:00",
+      "average_duration": 75,
+      "highlights": [
+        "Taze balık",
+        "Deniz manzarası",
+        "Lezzetli"
+      ]
+    },
+    {
+      "id": "fethiye-dinner-1",
+      "name": "Paspatur Beach Club",
+      "type": "dinner",
+      "city": "Muğla",
+      "lat": 36.5450,
+      "lng": 29.1050,
+      "cuisine": "Turkish",
+      "price_level": 3,
+      "google_rating": 4.8,
+      "review_count": 4100,
+      "opening_hours": "18:00-00:00",
+      "average_duration": 90,
+      "highlights": [
+        "Plaj klübü",
+        "DJ",
+        "Deniz kenarında",
+        "Balık"
+      ]
+    },
+    {
+      "id": "coffee-ankara",
+      "name": "Ankara Kahve Köşesi",
+      "type": "coffee",
+      "city": "Ankara",
+      "lat": 39.9450,
+      "lng": 32.8650,
+      "cuisine": "Cafe",
+      "price_level": 1,
+      "google_rating": 4.4,
+      "review_count": 900,
+      "opening_hours": "07:00-22:00",
+      "average_duration": 20,
+      "highlights": [
+        "Türk kahvesi",
+        "Hızlı",
+        "Uygun"
+      ]
+    },
+    {
+      "id": "coffee-konya",
+      "name": "Mevlana Kafe",
+      "type": "coffee",
+      "city": "Konya",
+      "lat": 37.6614,
+      "lng": 32.4808,
+      "cuisine": "Cafe",
+      "price_level": 1,
+      "google_rating": 4.3,
+      "review_count": 650,
+      "opening_hours": "07:00-21:00",
+      "average_duration": 20,
+      "highlights": [
+        "Türk kahvesi",
+        "Rahat",
+        "Tarihi"
+      ]
+    }
+  ]
+}
