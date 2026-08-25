@@ -192,18 +192,30 @@ public class TravelPlanner {
         List<Map<String, Object>> cityPlaces = dataStore.getPlacesByCity(city);
         List<Map<String, Object>> selected = new ArrayList<>();
 
-        // İlgilere göre yerler seç
+        // İlgilere göre yerler seç (maksimum 5 yer)
         for (Map<String, Object> place : cityPlaces) {
             String category = (String) place.get("category");
+            String type = (String) place.get("type");
 
             // İlgiyle eşleş
             boolean matches = interests.stream().anyMatch(interest ->
                 category.contains(interest.toLowerCase()) ||
+                type.contains(interest.toLowerCase()) ||
                 ((String) place.get("name")).toLowerCase().contains(interest.toLowerCase())
             );
 
-            if (matches && selected.size() < 3) {
+            if (matches && selected.size() < 5) {
                 selected.add(place);
+            }
+        }
+
+        // İlgiye uymayan yerlerden de ekle (maksimum 5 yer)
+        if (selected.size() < 5) {
+            for (Map<String, Object> place : cityPlaces) {
+                if (selected.size() >= 5) break;
+                if (!selected.contains(place)) {
+                    selected.add(place);
+                }
             }
         }
 
