@@ -43,7 +43,7 @@ export default function Itinerary({ itinerary, onPlaceClick }) {
           let nextStop = null
           let nextActivityIndex = -1
           for (let i = index + 1; i < itinerary.length; i++) {
-            if (itinerary[i].type !== 'arrival') {
+            if (itinerary[i].type !== 'arrival' && itinerary[i].type !== 'departure') {
               nextStop = itinerary[i]
               nextActivityIndex = i
               break
