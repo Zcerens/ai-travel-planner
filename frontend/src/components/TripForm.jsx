@@ -2,7 +2,9 @@ import { useState } from 'react'
 
 const CITIES = [
   'Ankara', 'İstanbul', 'İzmir', 'Antalya', 'Konya', 'Nevşehir',
-  'Denizli', 'Muğla', 'Adana', 'Gaziantep'
+  'Denizli', 'Muğla', 'Adana', 'Gaziantep', 'Bursa', 'Safranbolu',
+  'Kapadokya', 'Kuşadası', 'Bodrum', 'Marmaris', 'Çanakkale', 'Troia',
+  'Pergamon', 'Kütahya', 'Pamukkale', 'Dalyan', 'Mersin', 'Aydın'
 ]
 
 const INTERESTS = [
