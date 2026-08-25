@@ -39,6 +39,25 @@
       ]
     },
     {
+      "id": "ankara-dinner-1",
+      "name": "Ankara Kebapçısı Ahmet",
+      "type": "dinner",
+      "city": "Ankara",
+      "lat": 39.9380,
+      "lng": 32.8510,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.7,
+      "review_count": 2800,
+      "opening_hours": "17:00-23:00",
+      "average_duration": 60,
+      "highlights": [
+        "Kebap",
+        "Pide",
+        "Tarihi dükkan"
+      ]
+    },
+    {
       "id": "konya-pide-1",
       "name": "Konya Pide Salonu",
       "type": "lunch",
@@ -72,8 +91,123 @@
       "average_duration": 50,
       "highlights": [
         "Tatlı peynir",
-        "Aşırlı kahvaltı",
+        "Aşırı kahvaltı",
         "Dişi peynir"
+      ]
+    },
+    {
+      "id": "konya-dinner-1",
+      "name": "Mevlana Restoran",
+      "type": "dinner",
+      "city": "Konya",
+      "lat": 37.6550,
+      "lng": 32.4850,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.6,
+      "review_count": 2100,
+      "opening_hours": "18:00-23:00",
+      "average_duration": 75,
+      "highlights": [
+        "Testi kebabı",
+        "Sufi ruhunda",
+        "Geleneksel"
+      ]
+    },
+    {
+      "id": "istanbul-breakfast-1",
+      "name": "Istanbul Balkon Kahvaltısı",
+      "type": "breakfast",
+      "city": "İstanbul",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 2,
+      "google_rating": 4.7,
+      "review_count": 4500,
+      "opening_hours": "07:00-11:00",
+      "average_duration": 45,
+      "highlights": [
+        "Boğaz manzarası",
+        "Serpme kahvaltı",
+        "Çayırlar"
+      ]
+    },
+    {
+      "id": "istanbul-lunch-1",
+      "name": "Balıkçı Köşesi Kumkapı",
+      "type": "lunch",
+      "city": "İstanbul",
+      "lat": 41.0004,
+      "lng": 28.9730,
+      "cuisine": "Seafood",
+      "price_level": 3,
+      "google_rating": 4.8,
+      "review_count": 5200,
+      "opening_hours": "12:00-23:00",
+      "average_duration": 75,
+      "highlights": [
+        "Taze balık",
+        "Deniz kenarında",
+        "Hava açık"
+      ]
+    },
+    {
+      "id": "istanbul-dinner-1",
+      "name": "Sureyyapasha Yalı Restaurant",
+      "type": "dinner",
+      "city": "İstanbul",
+      "lat": 41.0450,
+      "lng": 29.0200,
+      "cuisine": "Turkish",
+      "price_level": 3,
+      "google_rating": 4.9,
+      "review_count": 6800,
+      "opening_hours": "18:00-00:00",
+      "average_duration": 90,
+      "highlights": [
+        "Boğaz kenarında",
+        "Romantik",
+        "Balık",
+        "Güneş batışı"
+      ]
+    },
+    {
+      "id": "izmir-breakfast-1",
+      "name": "Alsancak Kahvaltı Salonu",
+      "type": "breakfast",
+      "city": "İzmir",
+      "lat": 38.4230,
+      "lng": 27.1456,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 1,
+      "google_rating": 4.5,
+      "review_count": 2200,
+      "opening_hours": "07:00-11:00",
+      "average_duration": 45,
+      "highlights": [
+        "Deniz manzarası",
+        "Taze",
+        "Uygun fiyat"
+      ]
+    },
+    {
+      "id": "izmir-lunch-1",
+      "name": "Efes Balıkçısı Alsancak",
+      "type": "lunch",
+      "city": "İzmir",
+      "lat": 38.4250,
+      "lng": 27.1480,
+      "cuisine": "Seafood",
+      "price_level": 2,
+      "google_rating": 4.7,
+      "review_count": 3400,
+      "opening_hours": "12:00-23:00",
+      "average_duration": 75,
+      "highlights": [
+        "Taze balık",
+        "Kalamar",
+        "Palamut"
       ]
     },
     {
@@ -115,6 +249,25 @@
       ]
     },
     {
+      "id": "goreme-dinner-1",
+      "name": "Peri Bacası Dinner",
+      "type": "dinner",
+      "city": "Nevşehir",
+      "lat": 38.7400,
+      "lng": 34.8250,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.8,
+      "review_count": 3200,
+      "opening_hours": "17:00-23:00",
+      "average_duration": 75,
+      "highlights": [
+        "Peri bacası manzarası",
+        "Testi kebabı",
+        "Atmosfer"
+      ]
+    },
+    {
       "id": "denizli-breakfast-1",
       "name": "Pamukkale Panorama Breakfast",
       "type": "breakfast",
@@ -147,9 +300,28 @@
       "opening_hours": "12:00-22:00",
       "average_duration": 60,
       "highlights": [
-        "Trout",
+        "Alabalık",
         "Yerel yemekler",
-        "Denizli anestezi"
+        "Huzurlu ortam"
+      ]
+    },
+    {
+      "id": "denizli-dinner-1",
+      "name": "Beyaz Hazine Dinner",
+      "type": "dinner",
+      "city": "Denizli",
+      "lat": 37.9150,
+      "lng": 29.1100,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.7,
+      "review_count": 1800,
+      "opening_hours": "18:00-23:00",
+      "average_duration": 70,
+      "highlights": [
+        "Travertin değirmenleri",
+        "Alabalık",
+        "Rahat"
       ]
     },
     {
@@ -224,7 +396,7 @@
       "average_duration": 45,
       "highlights": [
         "Deniz manzarası",
-        "Ruh halinde",
+        "Huzurlu",
         "Taze"
       ]
     },
@@ -326,6 +498,64 @@
       ]
     },
     {
+      "id": "antalya-breakfast-1",
+      "name": "Kaleici Kahvaltı Bahçesi",
+      "type": "breakfast",
+      "city": "Antalya",
+      "lat": 36.8915,
+      "lng": 30.7104,
+      "cuisine": "Turkish Breakfast",
+      "price_level": 2,
+      "google_rating": 4.6,
+      "review_count": 1800,
+      "opening_hours": "07:00-11:00",
+      "average_duration": 45,
+      "highlights": [
+        "Tarihi ortam",
+        "Dar sokak",
+        "Huzurlu"
+      ]
+    },
+    {
+      "id": "antalya-lunch-1",
+      "name": "Aspendos Restoran",
+      "type": "lunch",
+      "city": "Antalya",
+      "lat": 37.0103,
+      "lng": 30.9881,
+      "cuisine": "Turkish",
+      "price_level": 2,
+      "google_rating": 4.7,
+      "review_count": 2000,
+      "opening_hours": "12:00-22:00",
+      "average_duration": 60,
+      "highlights": [
+        "Antik tiyatro manzarası",
+        "Geleneksel",
+        "Lezzetli"
+      ]
+    },
+    {
+      "id": "antalya-dinner-1",
+      "name": "Marina Restaurant Antalya",
+      "type": "dinner",
+      "city": "Antalya",
+      "lat": 36.8850,
+      "lng": 30.7200,
+      "cuisine": "Turkish",
+      "price_level": 3,
+      "google_rating": 4.8,
+      "review_count": 3800,
+      "opening_hours": "18:00-23:00",
+      "average_duration": 80,
+      "highlights": [
+        "Liman kenarında",
+        "Balık",
+        "Manzara",
+        "Romantik"
+      ]
+    },
+    {
       "id": "coffee-ankara",
       "name": "Ankara Kahve Köşesi",
       "type": "coffee",
@@ -361,6 +591,63 @@
         "Türk kahvesi",
         "Rahat",
         "Tarihi"
+      ]
+    },
+    {
+      "id": "coffee-nevşehir",
+      "name": "Göreme Kahvesi",
+      "type": "coffee",
+      "city": "Nevşehir",
+      "lat": 38.7435,
+      "lng": 34.8313,
+      "cuisine": "Cafe",
+      "price_level": 2,
+      "google_rating": 4.5,
+      "review_count": 1200,
+      "opening_hours": "08:00-20:00",
+      "average_duration": 30,
+      "highlights": [
+        "Manzara",
+        "Kahve",
+        "Rahat ortam"
+      ]
+    },
+    {
+      "id": "coffee-denizli",
+      "name": "Pamukkale Kahve Salonu",
+      "type": "coffee",
+      "city": "Denizli",
+      "lat": 37.9200,
+      "lng": 29.1208,
+      "cuisine": "Cafe",
+      "price_level": 1,
+      "google_rating": 4.4,
+      "review_count": 800,
+      "opening_hours": "07:00-20:00",
+      "average_duration": 20,
+      "highlights": [
+        "Türk kahvesi",
+        "Tatlı",
+        "Hızlı servis"
+      ]
+    },
+    {
+      "id": "coffee-istanbul",
+      "name": "Boğaz Kahve Salonları",
+      "type": "coffee",
+      "city": "İstanbul",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "cuisine": "Cafe",
+      "price_level": 2,
+      "google_rating": 4.6,
+      "review_count": 2300,
+      "opening_hours": "07:00-22:00",
+      "average_duration": 30,
+      "highlights": [
+        "Boğaz manzarası",
+        "Kahve çeşitleri",
+        "Huzurlu"
       ]
     }
   ]
