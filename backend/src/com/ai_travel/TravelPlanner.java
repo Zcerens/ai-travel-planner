@@ -218,6 +218,7 @@ public class TravelPlanner {
     private double calculateDistance(String from, String to) {
         // Türkiye'deki ana şehirler arası gerçek mesafeler (km)
         Map<String, Double> distances = new HashMap<>();
+
         // Ankara rotalı
         distances.put("ankara-konya", 262.0);
         distances.put("ankara-antalya", 480.0);
@@ -226,33 +227,81 @@ public class TravelPlanner {
         distances.put("ankara-kaş", 675.0);
         distances.put("ankara-demre", 660.0);
         distances.put("ankara-nevşehir", 230.0);
+        distances.put("ankara-istanbul", 450.0);
+        distances.put("ankara-izmir", 550.0);
+        distances.put("ankara-bursa", 380.0);
+        distances.put("ankara-safranbolu", 280.0);
 
         // Konya rotalı
         distances.put("konya-nevşehir", 187.0);
         distances.put("konya-denizli", 315.0);
         distances.put("konya-antalya", 350.0);
         distances.put("konya-fethiye", 450.0);
+        distances.put("konya-ankara", 262.0);
 
         // Nevşehir rotalı
         distances.put("nevşehir-denizli", 385.0);
         distances.put("nevşehir-antalya", 480.0);
+        distances.put("nevşehir-ankara", 230.0);
+        distances.put("nevşehir-konya", 187.0);
 
         // Denizli rotalı
         distances.put("denizli-antalya", 320.0);
         distances.put("denizli-fethiye", 320.0);
         distances.put("denizli-kaş", 380.0);
         distances.put("denizli-demre", 360.0);
+        distances.put("denizli-ankara", 520.0);
+        distances.put("denizli-izmir", 230.0);
+        distances.put("denizli-istanbul", 650.0);
 
         // Antalya bölgesi
         distances.put("antalya-fethiye", 280.0);
         distances.put("antalya-kaş", 340.0);
         distances.put("antalya-demre", 280.0);
+        distances.put("antalya-ankara", 480.0);
+        distances.put("antalya-mersin", 370.0);
         distances.put("fethiye-kaş", 54.0);
         distances.put("kaş-demre", 48.0);
         distances.put("fethiye-demre", 105.0);
 
+        // İstanbul rotalı
+        distances.put("istanbul-ankara", 450.0);
+        distances.put("istanbul-izmir", 580.0);
+        distances.put("istanbul-bursa", 240.0);
+        distances.put("istanbul-çanakkale", 320.0);
+
+        // İzmir rotalı
+        distances.put("izmir-ankara", 550.0);
+        distances.put("izmir-istanbul", 580.0);
+        distances.put("izmir-kuşadası", 95.0);
+        distances.put("izmir-bodrum", 280.0);
+        distances.put("izmir-marmaris", 390.0);
+        distances.put("izmir-pergamon", 100.0);
+
+        // Batı Anadolu
+        distances.put("bursa-istanbul", 240.0);
+        distances.put("bursa-ankara", 380.0);
+        distances.put("bursa-izmir", 350.0);
+        distances.put("safranbolu-ankara", 280.0);
+        distances.put("safranbolu-istanbul", 380.0);
+
+        // Ege
+        distances.put("kuşadası-izmir", 95.0);
+        distances.put("bodrum-izmir", 280.0);
+        distances.put("bodrum-marmaris", 120.0);
+        distances.put("marmaris-fethiye", 140.0);
+
+        // Kuzey Anadolu
+        distances.put("çanakkale-istanbul", 320.0);
+        distances.put("çanakkale-troia", 30.0);
+        distances.put("troia-çanakkale", 30.0);
+
+        // Güney
+        distances.put("adana-mersin", 35.0);
+        distances.put("adana-antalya", 400.0);
+
         String key = from.toLowerCase() + "-" + to.toLowerCase();
-        return distances.getOrDefault(key, 300.0);
+        return distances.getOrDefault(key, 350.0);
     }
 
     @SuppressWarnings("unchecked")
