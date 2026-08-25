@@ -61,6 +61,156 @@
       ]
     },
     {
+      "id": "ankara-anit-kabir",
+      "name": "Anıtkabir",
+      "type": "historical",
+      "category": "monument",
+      "lat": 39.8906,
+      "lng": 32.8354,
+      "city": "Ankara",
+      "description": "Atatürk'ün mausolesi, Türkiye'nin en önemli anıtlarından biri",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "09:00-17:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "09:00-17:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "09:00-17:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.6,
+      "review_count": 3400,
+      "highlights": [
+        "Mausoleum",
+        "İtme ve Saygı",
+        "Parklar"
+      ]
+    },
+    {
+      "id": "ankara-goremelik-park",
+      "name": "Genclik Parkı",
+      "type": "nature",
+      "category": "park",
+      "lat": 39.8765,
+      "lng": 32.7659,
+      "city": "Ankara",
+      "description": "Ankara'nın en büyük ve en güzel parkı",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "07:00-22:00",
+        "tuesday": "07:00-22:00",
+        "wednesday": "07:00-22:00",
+        "thursday": "07:00-22:00",
+        "friday": "07:00-22:00",
+        "saturday": "07:00-22:00",
+        "sunday": "07:00-22:00"
+      },
+      "estimated_visit_duration": 60,
+      "google_rating": 4.4,
+      "review_count": 2800,
+      "highlights": [
+        "Gül bahçesi",
+        "Piknik alanları",
+        "Hayvanat bahçesi"
+      ]
+    },
+    {
+      "id": "istanbul-hagia-sophia",
+      "name": "Ayasofya",
+      "type": "historical",
+      "category": "mosque",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "city": "İstanbul",
+      "description": "Dünya mimarisinin şaheseri - UNESCO Dünya Mirası",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "09:00-17:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "09:00-17:00",
+        "friday": "14:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "09:00-17:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.7,
+      "review_count": 28900,
+      "highlights": [
+        "Dev kubbe",
+        "Bizans mosaikleri",
+        "Tarihi mimari"
+      ]
+    },
+    {
+      "id": "istanbul-topkapi",
+      "name": "Topkapı Sarayı",
+      "type": "historical",
+      "category": "palace",
+      "lat": 41.0161,
+      "lng": 28.9859,
+      "city": "İstanbul",
+      "description": "Osmanlı Sultanlarının sarayı - UNESCO Dünya Mirası",
+      "entrance_fee": 500,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "09:00-17:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "09:00-17:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "09:00-17:00"
+      },
+      "estimated_visit_duration": 150,
+      "google_rating": 4.5,
+      "review_count": 15600,
+      "highlights": [
+        "Saray yapıları",
+        "Hazine odası",
+        "Boğaz manzarası"
+      ]
+    },
+    {
+      "id": "istanbul-blue-mosque",
+      "name": "Sultanahmet Camii",
+      "type": "historical",
+      "category": "mosque",
+      "lat": 41.0054,
+      "lng": 28.9764,
+      "city": "İstanbul",
+      "description": "Mavi Cami - muhteşem osmanlı mimarisi",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "08:30-17:00",
+        "tuesday": "08:30-17:00",
+        "wednesday": "08:30-17:00",
+        "thursday": "08:30-17:00",
+        "friday": "13:30-17:00",
+        "saturday": "08:30-17:00",
+        "sunday": "08:30-17:00"
+      },
+      "estimated_visit_duration": 60,
+      "google_rating": 4.6,
+      "review_count": 24500,
+      "highlights": [
+        "Mavi iznikli çiniler",
+        "Altı minare",
+        "Iç tasarım"
+      ]
+    },
+    {
       "id": "konya-mevlana",
       "name": "Mevlana Müzesi",
       "type": "historical",
@@ -178,6 +328,156 @@
         "Panoramik manzara",
         "Kapadokya dioraması",
         "Fotoğraf fırsatı"
+      ]
+    },
+    {
+      "id": "cappadocia-pasabag",
+      "name": "Pasabağ Peri Bacaları",
+      "type": "nature",
+      "category": "natural_site",
+      "lat": 38.7289,
+      "lng": 34.8317,
+      "city": "Nevşehir",
+      "description": "Kapadokya'nın en spektaküler peri bacaları",
+      "entrance_fee": 100,
+      "student_fee": 50,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "08:00-18:00",
+        "tuesday": "08:00-18:00",
+        "wednesday": "08:00-18:00",
+        "thursday": "08:00-18:00",
+        "friday": "08:00-18:00",
+        "saturday": "08:00-18:00",
+        "sunday": "08:00-18:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.7,
+      "review_count": 6800,
+      "highlights": [
+        "Üç tepeli peri bacaları",
+        "Jeolojik yapı",
+        "Doğal güzellik"
+      ]
+    },
+    {
+      "id": "cappadocia-devrent",
+      "name": "Devrent Vadisi",
+      "type": "nature",
+      "category": "natural_site",
+      "lat": 38.7519,
+      "lng": 34.7803,
+      "city": "Nevşehir",
+      "description": "Fantastik şekillerdeki peri bacaları ve kaya oluşumları",
+      "entrance_fee": 50,
+      "student_fee": 25,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "08:00-18:00",
+        "tuesday": "08:00-18:00",
+        "wednesday": "08:00-18:00",
+        "thursday": "08:00-18:00",
+        "friday": "08:00-18:00",
+        "saturday": "08:00-18:00",
+        "sunday": "08:00-18:00"
+      },
+      "estimated_visit_duration": 60,
+      "google_rating": 4.5,
+      "review_count": 3200,
+      "highlights": [
+        "Görünüş şekillerinin benzetileri",
+        "Hayal ürünü peri bacaları",
+        "Fotoğraf fırsatı"
+      ]
+    },
+    {
+      "id": "izmir-ephesus",
+      "name": "Efes Antik Kenti",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 37.9449,
+      "lng": 27.3403,
+      "city": "İzmir",
+      "description": "UNESCO Dünya Mirası - Dünyanın en iyi korunmuş antik şehirlerinden biri",
+      "entrance_fee": 400,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "08:00-19:00",
+        "tuesday": "08:00-19:00",
+        "wednesday": "08:00-19:00",
+        "thursday": "08:00-19:00",
+        "friday": "08:00-19:00",
+        "saturday": "08:00-19:00",
+        "sunday": "08:00-19:00"
+      },
+      "estimated_visit_duration": 150,
+      "google_rating": 4.8,
+      "review_count": 18900,
+      "highlights": [
+        "Kütüphane",
+        "Tiyatro",
+        "Apollon Tapınağı"
+      ]
+    },
+    {
+      "id": "izmir-virgin-mary",
+      "name": "Meryem Ana'nın Evi",
+      "type": "historical",
+      "category": "religious_site",
+      "lat": 37.8825,
+      "lng": 27.3222,
+      "city": "İzmir",
+      "description": "Meryem Ana'nın yaşadığı tarihi ev - UNESCO Dünya Mirası",
+      "entrance_fee": 200,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "08:00-18:00",
+        "tuesday": "08:00-18:00",
+        "wednesday": "08:00-18:00",
+        "thursday": "08:00-18:00",
+        "friday": "08:00-18:00",
+        "saturday": "08:00-18:00",
+        "sunday": "08:00-18:00"
+      },
+      "estimated_visit_duration": 60,
+      "google_rating": 4.5,
+      "review_count": 4200,
+      "highlights": [
+        "Kutsal alan",
+        "Meryem Ana heykeli",
+        "İnanç turizmi"
+      ]
+    },
+    {
+      "id": "izmir-shirince",
+      "name": "Şirince Köyü",
+      "type": "nature",
+      "category": "village",
+      "lat": 37.8656,
+      "lng": 27.3256,
+      "city": "İzmir",
+      "description": "Efes'in yakınında güzel ve tarihî köy",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.6,
+      "review_count": 7800,
+      "highlights": [
+        "Dar sokaklı köy",
+        "Turizm dükkanları",
+        "Şarap barı"
       ]
     },
     {
@@ -625,7 +925,7 @@
       "google_rating": 4.5,
       "review_count": 1800,
       "highlights": [
-        "Likya sacredness",
+        "Likya tapınakları",
         "Tapınaklar",
         "Doğal güzellik"
       ]
@@ -668,7 +968,7 @@
       "lat": 36.4733,
       "lng": 29.1250,
       "city": "Muğla",
-      "description": "Nadir kelebekler ve dik kayalıklarla çevrili vadi",
+      "description": "Nadir kelebekler ve dik kayalıklarla çevreli vadi",
       "entrance_fee": 75,
       "student_fee": 0,
       "museum_card_valid": false,
@@ -691,7 +991,7 @@
       ]
     },
     {
-      "id": "fethiye-dinc-river",
+      "id": "fethiye-river-canyon",
       "name": "Esen Irmağı Kanyonu",
       "type": "nature",
       "category": "canyon",
@@ -718,6 +1018,156 @@
         "Rafting",
         "Doğa yürüyüşü",
         "Manzara"
+      ]
+    },
+    {
+      "id": "antalya-old-city",
+      "name": "Antalya Kaleici",
+      "type": "historical",
+      "category": "district",
+      "lat": 36.8915,
+      "lng": 30.7104,
+      "city": "Antalya",
+      "description": "Osmanlı dönemi yapılarıyla dolu tarihi bölge",
+      "entrance_fee": 0,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "00:00-23:59",
+        "tuesday": "00:00-23:59",
+        "wednesday": "00:00-23:59",
+        "thursday": "00:00-23:59",
+        "friday": "00:00-23:59",
+        "saturday": "00:00-23:59",
+        "sunday": "00:00-23:59"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.5,
+      "review_count": 12400,
+      "highlights": [
+        "Dar sokaklar",
+        "Yivli Minare",
+        "Sahil manzarası"
+      ]
+    },
+    {
+      "id": "antalya-aspendos",
+      "name": "Aspendos Antik Tiyatrosu",
+      "type": "historical",
+      "category": "archaeological_site",
+      "lat": 37.0103,
+      "lng": 30.9881,
+      "city": "Antalya",
+      "description": "Dünyanın en iyi korunmuş antik Romen tiyatrosu",
+      "entrance_fee": 300,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "09:00-18:00",
+        "tuesday": "09:00-18:00",
+        "wednesday": "09:00-18:00",
+        "thursday": "09:00-18:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-18:00",
+        "sunday": "09:00-18:00"
+      },
+      "estimated_visit_duration": 90,
+      "google_rating": 4.7,
+      "review_count": 9200,
+      "highlights": [
+        "Akustik mimarisi",
+        "İyi korunmuş yapı",
+        "Tarihsel önem"
+      ]
+    },
+    {
+      "id": "antalya-duden-waterfall",
+      "name": "Düden Şelalesi",
+      "type": "nature",
+      "category": "waterfall",
+      "lat": 36.9194,
+      "lng": 30.6850,
+      "city": "Antalya",
+      "description": "Şehrin içinde doğal şelale",
+      "entrance_fee": 100,
+      "student_fee": 0,
+      "museum_card_valid": false,
+      "opening_hours": {
+        "monday": "07:00-21:00",
+        "tuesday": "07:00-21:00",
+        "wednesday": "07:00-21:00",
+        "thursday": "07:00-21:00",
+        "friday": "07:00-21:00",
+        "saturday": "07:00-21:00",
+        "sunday": "07:00-21:00"
+      },
+      "estimated_visit_duration": 45,
+      "google_rating": 4.4,
+      "review_count": 5600,
+      "highlights": [
+        "Doğal şelale",
+        "Piknik alanları",
+        "Yürüyüş yolları"
+      ]
+    },
+    {
+      "id": "adana-museum",
+      "name": "Adana Arkeoloji Müzesi",
+      "type": "museum",
+      "category": "museum",
+      "lat": 37.0019,
+      "lng": 35.3313,
+      "city": "Adana",
+      "description": "Hint ve Asurlı eserleri içeren müze",
+      "entrance_fee": 200,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "09:00-17:00",
+        "tuesday": "09:00-17:00",
+        "wednesday": "09:00-17:00",
+        "thursday": "09:00-17:00",
+        "friday": "09:00-17:00",
+        "saturday": "09:00-17:00",
+        "sunday": "09:00-17:00"
+      },
+      "estimated_visit_duration": 75,
+      "google_rating": 4.3,
+      "review_count": 1200,
+      "highlights": [
+        "Tarihî eserler",
+        "Hint sanatı",
+        "Asurlı eserleri"
+      ]
+    },
+    {
+      "id": "gaziantep-museum",
+      "name": "Gaziantep Zeugma Müzesi",
+      "type": "museum",
+      "category": "museum",
+      "lat": 37.0667,
+      "lng": 37.3833,
+      "city": "Gaziantep",
+      "description": "Zeugma mozaiklerinin en iyi koleksiyonu",
+      "entrance_fee": 300,
+      "student_fee": 0,
+      "museum_card_valid": true,
+      "opening_hours": {
+        "monday": "09:00-18:00",
+        "tuesday": "09:00-18:00",
+        "wednesday": "09:00-18:00",
+        "thursday": "09:00-18:00",
+        "friday": "09:00-18:00",
+        "saturday": "09:00-18:00",
+        "sunday": "09:00-18:00"
+      },
+      "estimated_visit_duration": 120,
+      "google_rating": 4.8,
+      "review_count": 8900,
+      "highlights": [
+        "Zeugma mozaikleri",
+        "Romen eserleri",
+        "Dönem koleksiyonları"
       ]
     }
   ]
