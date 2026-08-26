@@ -111,6 +111,24 @@ public class TripPlannerHandler implements HttpHandler {
             map.put("interests", interests);
         }
 
+        if (json.contains("\"returnLocation\"")) {
+            int idx = json.indexOf("\"returnLocation\":\"") + 18;
+            int end = json.indexOf("\"", idx);
+            map.put("returnLocation", json.substring(idx, end));
+        }
+
+        if (json.contains("\"tripDays\"")) {
+            int idx = json.indexOf("\"tripDays\":") + 11;
+            int end = json.indexOf(",", idx);
+            if (end == -1) end = json.indexOf("}", idx);
+            String value = json.substring(idx, end).trim();
+            try {
+                map.put("tripDays", Integer.parseInt(value));
+            } catch (NumberFormatException e) {
+                map.put("tripDays", 2);
+            }
+        }
+
         return map;
     }
 
