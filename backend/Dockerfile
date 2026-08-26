@@ -3,9 +3,11 @@ WORKDIR /build
 COPY src ./src
 COPY data ./data
 
-# Download PostgreSQL JDBC driver directly
+# Download PostgreSQL JDBC driver
 RUN mkdir -p lib && \
-    curl -L -o lib/postgresql-42.6.0.jar https://jdbc.postgresql.org/download/postgresql-42.6.0.jar
+    apt-get update && apt-get install -y wget && \
+    wget -O lib/postgresql-42.6.0.jar https://jdbc.postgresql.org/download/postgresql-42.6.0.jar && \
+    apt-get remove -y wget && apt-get clean
 
 # Compile
 RUN javac -cp lib/postgresql-42.6.0.jar -d out src/com/ai_travel/*.java
