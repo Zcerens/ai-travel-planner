@@ -2,10 +2,13 @@ FROM eclipse-temurin:21-jdk as builder
 WORKDIR /build
 COPY src ./src
 COPY data ./data
-COPY lib ./lib
 
-# Compile with JDBC driver in classpath
-RUN javac -cp /build/lib/postgresql-42.6.0.jar -d out src/com/ai_travel/*.java
+# Download PostgreSQL JDBC driver directly
+RUN mkdir -p lib && \
+    curl -L -o lib/postgresql-42.6.0.jar https://jdbc.postgresql.org/download/postgresql-42.6.0.jar
+
+# Compile
+RUN javac -cp lib/postgresql-42.6.0.jar -d out src/com/ai_travel/*.java
 
 FROM eclipse-temurin:21-jre
 WORKDIR /app
