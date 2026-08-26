@@ -6,8 +6,7 @@ COPY data ./data
 # Download PostgreSQL JDBC driver
 RUN mkdir -p lib && \
     apt-get update && apt-get install -y wget && \
-    wget -O lib/postgresql-42.6.0.jar https://jdbc.postgresql.org/download/postgresql-42.6.0.jar && \
-    apt-get remove -y wget && apt-get clean
+    wget -O lib/postgresql-42.6.0.jar https://jdbc.postgresql.org/download/postgresql-42.6.0.jar
 
 # Compile
 RUN javac -cp lib/postgresql-42.6.0.jar -d out src/com/ai_travel/*.java
@@ -16,7 +15,7 @@ FROM eclipse-temurin:21-jre
 WORKDIR /app
 COPY --from=builder /build/out ./
 COPY --from=builder /build/data ./data
-COPY --from=builder /build/lib ./lib
+COPY --from=builder /build/lib/postgresql-42.6.0.jar ./lib/
 
 ENV PORT=8080
 EXPOSE 8080
