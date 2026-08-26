@@ -15,7 +15,7 @@ FROM eclipse-temurin:21-jre
 WORKDIR /app
 COPY --from=builder /build/out ./
 COPY --from=builder /build/data ./data
-COPY --from=builder /build/lib/postgresql-42.6.0.jar ./lib/
+COPY --from=builder /build/lib ./lib
 
 ENV PORT=8080
 EXPOSE 8080
