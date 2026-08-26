@@ -22,7 +22,8 @@ public class Main {
         String placesData = new String(Files.readAllBytes(Paths.get("data/places.json")));
         String restaurantsData = new String(Files.readAllBytes(Paths.get("data/restaurants.json")));
 
-        DataStore dataStore = new DataStore(placesData, restaurantsData);
+        // Try to use PostgreSQL, fallback to JSON if not available
+        DataStore dataStore = new DatabaseDataStore(placesData, restaurantsData);
         TravelPlanner planner = new TravelPlanner(dataStore);
 
         // Routes
