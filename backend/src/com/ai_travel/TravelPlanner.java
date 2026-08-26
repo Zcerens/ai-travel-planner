@@ -18,6 +18,8 @@ public class TravelPlanner {
         String departureTime = (String) request.get("departureTime");
         List<String> destinations = (List<String>) request.get("destinations");
         List<String> interests = (List<String>) request.get("interests");
+        String returnLocation = (String) request.get("returnLocation");
+        int tripDays = request.containsKey("tripDays") ? ((Number) request.get("tripDays")).intValue() : destinations.size();
 
         // Parse departure time
         LocalDateTime currentTime = LocalDateTime.parse(departureTime, DateTimeFormatter.ISO_LOCAL_DATE_TIME);
@@ -25,11 +27,26 @@ public class TravelPlanner {
         Map<String, Object> result = new LinkedHashMap<>();
         List<Map<String, Object>> dailyPlans = new ArrayList<>();
 
-        // Her hedef şehir için plan oluştur
+        // Gidiş rotasını planla (başlangıçtan dönüş yerine kadar, tripDays'e göre)
         String previousCity = startCity;
-        for (int dayIndex = 0; dayIndex < destinations.size(); dayIndex++) {
-            String destCity = destinations.get(dayIndex);
+
+        // Eğer dönüş yeri belirtildiyse, son hedef olarak ekle
+        List<String> allDestinations = new ArrayList<>(destinations);
+        if (returnLocation != null && !returnLocation.isEmpty() && !returnLocation.equals(startCity)) {
+            // Dönüş yeri zaten hedeflerde varsa ekleme
+            if (!allDestinations.contains(returnLocation)) {
+                allDestinations.add(returnLocation);
+            }
+        }
+
+        // Trip days'e göre hedefleri dağıt
+        int destinationsPerDay = Math.max(1, allDestinations.size() / Math.max(1, tripDays));
+        int destIndex = 0;
+
+        for (int dayIndex = 0; dayIndex < tripDays && destIndex < allDestinations.size(); dayIndex++) {
+            String destCity = allDestinations.get(Math.min(destIndex, allDestinations.size() - 1));
             Map<String, Object> dayPlan = planDay(previousCity, destCity, currentTime, interests);
+            dayPlan.put("dayNumber", dayIndex + 1);
             dailyPlans.add(dayPlan);
 
             // Sonraki günün başlangıç saati = bu günün bitiş saati
@@ -40,11 +57,14 @@ public class TravelPlanner {
             ).plusDays(1).withHour(8).withMinute(0).withSecond(0);
 
             previousCity = destCity;
+            destIndex++;
         }
 
         result.put("status", "success");
         result.put("totalPlaces", getTotalPlaces(dailyPlans));
         result.put("estimatedDuration", calculateTotalDuration(dailyPlans));
+        result.put("tripDays", tripDays);
+        result.put("returnLocation", returnLocation);
         result.put("dailyPlans", dailyPlans);
 
         return result;
@@ -165,11 +185,22 @@ public class TravelPlanner {
             return currentTime;
         }
 
-        // Türe uygun restoran bul
-        Map<String, Object> selectedRestaurant = restaurants.stream()
-            .filter(r -> type.equals(r.get("type")))
-            .findFirst()
-            .orElse(restaurants.get(0));
+        // Türe uygun restoranları bul
+        List<Map<String, Object>> matchingRestaurants = new ArrayList<>();
+        for (Map<String, Object> r : restaurants) {
+            if (type.equals(r.get("type"))) {
+                matchingRestaurants.add(r);
+            }
+        }
+
+        // Uygun olanlardan rasgele seç, yoksa hepsinden rasgele seç
+        Map<String, Object> selectedRestaurant;
+        java.util.Random random = new java.util.Random();
+        if (!matchingRestaurants.isEmpty()) {
+            selectedRestaurant = matchingRestaurants.get(random.nextInt(matchingRestaurants.size()));
+        } else {
+            selectedRestaurant = restaurants.get(random.nextInt(restaurants.size()));
+        }
 
         Map<String, Object> stop = new LinkedHashMap<>();
         stop.put("time", currentTime.toString());
@@ -191,8 +222,10 @@ public class TravelPlanner {
     private List<Map<String, Object>> selectAttractions(String city, String fromCity, List<String> interests) {
         List<Map<String, Object>> cityPlaces = dataStore.getPlacesByCity(city);
         List<Map<String, Object>> selected = new ArrayList<>();
+        java.util.Random random = new java.util.Random();
 
         // İlgilere göre yerler seç (maksimum 5 yer)
+        List<Map<String, Object>> matchingPlaces = new ArrayList<>();
         for (Map<String, Object> place : cityPlaces) {
             String category = (String) place.get("category");
             String type = (String) place.get("type");
@@ -204,24 +237,33 @@ public class TravelPlanner {
                 ((String) place.get("name")).toLowerCase().contains(interest.toLowerCase())
             );
 
-            if (matches && selected.size() < 5) {
-                selected.add(place);
+            if (matches) {
+                matchingPlaces.add(place);
             }
         }
 
-        // İlgiye uymayan yerlerden de ekle (maksimum 5 yer)
-        if (selected.size() < 5) {
-            for (Map<String, Object> place : cityPlaces) {
-                if (selected.size() >= 5) break;
-                if (!selected.contains(place)) {
-                    selected.add(place);
-                }
+        // İlgilere uyanlardan rasgele seç
+        while (selected.size() < 5 && !matchingPlaces.isEmpty()) {
+            int randomIdx = random.nextInt(matchingPlaces.size());
+            selected.add(matchingPlaces.remove(randomIdx));
+        }
+
+        // İlgiye uymayan yerlerden de ekle (rasgele)
+        List<Map<String, Object>> nonMatchingPlaces = new ArrayList<>();
+        for (Map<String, Object> place : cityPlaces) {
+            if (!selected.contains(place)) {
+                nonMatchingPlaces.add(place);
             }
+        }
+
+        while (selected.size() < 5 && !nonMatchingPlaces.isEmpty()) {
+            int randomIdx = random.nextInt(nonMatchingPlaces.size());
+            selected.add(nonMatchingPlaces.remove(randomIdx));
         }
 
         // En az 1 yer ekle
         if (selected.isEmpty() && !cityPlaces.isEmpty()) {
-            selected.add(cityPlaces.get(0));
+            selected.add(cityPlaces.get(random.nextInt(cityPlaces.size())));
         }
 
         return selected;
