@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import TripForm from './components/TripForm'
 import TripPlan from './components/TripPlan'
-import './App.css'
 
 export default function App() {
   const [currentStep, setCurrentStep] = useState('discover') // discover, personalize, results, share, analytics
