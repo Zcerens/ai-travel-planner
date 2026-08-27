@@ -11,9 +11,9 @@ public class DatabaseConnection {
             // PostgreSQL JDBC driver
             Class.forName("org.postgresql.Driver");
 
-            // Railway PostgreSQL connection
-            String dbUrl = System.getenv("DATABASE_URL");
-
+            // Railway PostgreSQL connection - USE PRIVATE URL
+            String dbUrl = System.getenv("DATABASE_PRIVATE_URL");
+            
             if (dbUrl == null || dbUrl.isEmpty()) {
                 // Fallback to local development
                 dbUrl = "jdbc:postgresql://localhost:5432/ai_travel";
